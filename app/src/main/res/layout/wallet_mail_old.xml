@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="24sp">
+
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/jpeg"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:layout_centerVertical="true"
+            app:shapeAppearanceOverlay="@style/avatar"
+            android:src="@drawable/v14453767635"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_centerVertical="true" android:layout_toEndOf="@+id/jpeg"
+            android:layout_marginLeft="24px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/middle"
+                android:text="Mann Asugo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" style="@style/mug"
+                android:layout_marginTop="12sp"
+                android:textColor="#838383" android:textSize="11sp"
+                android:text="SENT"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp" android:layout_marginLeft="16sp"
+            android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_bin_202303311456"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="24sp">
+
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/jpeg2"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:layout_centerVertical="true"
+            app:shapeAppearanceOverlay="@style/avatar"
+            android:src="@drawable/v14453767635"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_centerVertical="true" android:layout_toEndOf="@+id/jpeg2"
+            android:layout_marginLeft="24px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/middle"
+                android:text="Saga Asugo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" style="@style/mug"
+                android:layout_marginTop="12sp"
+                android:textColor="#838383" android:textSize="11sp"
+                android:text="RECEIVED"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp" android:layout_toStartOf="@+id/can"
+            android:layout_centerVertical="true" android:src="@drawable/ic_max_202306301845"/>
+
+        <ImageView android:id="@+id/can"
+            android:layout_width="21dp"
+            android:layout_height="21dp" android:layout_marginStart="24sp"
+            android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_bin_202303311456"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

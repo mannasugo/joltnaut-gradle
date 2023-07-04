@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!--ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp" android:src="@drawable/ic_joltnaut_202304191915"/-->
+
+        <TextView android:id="@+id/notate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/v202201311917___litera___basic" android:layout_centerVertical="true"
+            android:textColor="#6C6C6C" android:textFontWeight="900"
+            android:textSize="14sp"
+            android:letterSpacing=".15"
+            android:text="USD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_toRightOf="@+id/notate" android:layout_marginStart="10dp" android:layout_centerVertical="true"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#3CFB44" android:textFontWeight="900" android:textSize="16sp"
+            android:letterSpacing=".15"
+            android:text="291.04"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true">
+
+            <ImageView android:id="@+id/mugs"
+                android:layout_width="21dp"
+                android:layout_height="21dp" android:layout_marginEnd="16sp" android:layout_gravity="center_vertical" android:src="@drawable/ic_mug_202204261406"/>
+
+            <ImageView android:id="@+id/clientWallet"
+                android:layout_width="21dp"
+                android:layout_height="21dp" android:layout_marginEnd="16sp" android:layout_gravity="center_vertical" android:src="@drawable/ic_vaulten_202301061328"/>
+
+            <ImageView android:id="@+id/walletServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:src="@drawable/ic_to_via_202205081410"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rootOld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="42sp"/>
+</LinearLayout>

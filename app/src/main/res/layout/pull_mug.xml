@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="36sp"
+            android:layout_height="36sp" android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_joltnaut_202304191915"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16sp"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#6C6C6C"
+            android:textFontWeight="900" android:textSize="14sp"
+            android:letterSpacing=".15"
+            android:text="SIGNIN"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="42sp" android:layout_marginBottom="16sp"
+        android:fontFamily="@font/v202201311917___litera___basic"
+        android:textColor="#6C6C6C"
+        android:textFontWeight="900" android:textSize="12sp"
+        android:letterSpacing=".15"
+        android:text="EMAIL"/>
+
+    <EditText android:id="@+id/mail"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="81px"
+        android:paddingVertical="14px"
+        android:paddingHorizontal="27px"
+        android:background="@drawable/poll"
+        android:inputType="text"
+        android:fontFamily="@font/v202201311917___litera___basic"
+        android:textSize="16sp"
+        android:letterSpacing=".15"
+        android:textColorHint="#838383"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="42sp" android:layout_marginBottom="16sp"
+        android:fontFamily="@font/v202201311917___litera___basic"
+        android:textColor="#6C6C6C"
+        android:textFontWeight="900" android:textSize="12sp"
+        android:letterSpacing=".15"
+        android:text="PASSWORD"/>
+
+    <EditText android:id="@+id/pass"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="81px"
+        android:paddingVertical="14px"
+        android:paddingHorizontal="27px"
+        android:background="@drawable/poll"
+        android:inputType="textPassword"
+        android:fontFamily="@font/v202201311917___litera___basic"
+        android:textSize="16sp"
+        android:letterSpacing=".15"
+        android:textColorHint="#838383"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pulls"
+        android:layout_width="match_parent"
+        android:layout_height="81px" android:layout_marginTop="58sp"
+        android:fontFamily="@font/v202201311917___litera___basic"
+        android:background="#575757"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textFontWeight="900"
+        android:letterSpacing=".15"
+        android:textColor="#fff"
+        android:text="LOGIN TO JOLTNAUT"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginVertical="42sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#000"
+            android:textFontWeight="900" android:textSize="11sp"
+            android:letterSpacing=".15"
+            android:text="FORGOT PASSWORD?"/>
+
+        <TextView android:id="@+id/pollin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#000"
+            android:textFontWeight="900" android:textSize="11sp"
+            android:letterSpacing=".15"
+            android:text="REGISTER"/>
+    </RelativeLayout>
+
+</LinearLayout>

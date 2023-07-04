@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true">
+
+            <TextView android:id="@+id/notate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_centerVertical="true"
+                android:fontFamily="@font/v202201311917___litera___basic"
+                android:textColor="#000"
+                android:textFontWeight="900" android:textSize="14sp"
+                android:letterSpacing=".15"
+                android:text="USD"/>
+
+            <EditText android:id="@+id/slot"
+                android:imeOptions="actionDone"
+                android:layout_width="120dp"
+                android:layout_height="81px" android:layout_centerVertical="true" android:layout_toEndOf="@+id/notate"
+                android:paddingVertical="14px"
+                android:paddingHorizontal="27px" android:layout_marginStart="30sp"
+                android:background="@drawable/poll"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/v202201311917___litera___basic"
+                android:textSize="24px"
+                android:letterSpacing=".15"
+                android:textColorHint="#838383"/>
+
+            <ImageView android:id="@+id/vaultSwap"
+                android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_toStartOf="@+id/put" android:layout_marginStart="24dp"
+                android:layout_centerVertical="true" android:src="@drawable/ic_recent_202301071417"/>
+
+            <ImageView android:id="@+id/put"
+                android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_toStartOf="@+id/pull" android:layout_marginStart="24dp"
+                android:layout_centerVertical="true" android:src="@drawable/ic_put_202207071206"/>
+
+            <ImageView android:id="@+id/pull"
+                android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_marginStart="24sp"
+                android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_take_202207071159"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/clients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true">
+
+            <TextView android:id="@+id/notate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_centerVertical="true"
+                android:fontFamily="@font/v202201311917___litera___basic"
+                android:textColor="#000"
+                android:textFontWeight="900" android:textSize="14sp"
+                android:letterSpacing=".15"
+                android:text="USD"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_toEndOf="@+id/notate" android:layout_marginStart="10dp" android:layout_centerVertical="true"
+                android:fontFamily="@font/v202201311917___litera___basic"
+                android:textColor="#3CFB44" android:textFontWeight="900" android:textSize="16sp"
+                android:letterSpacing=".15"
+                android:text="291.04"/>
+
+            <ImageView android:id="@+id/walletServe"
+                android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_toStartOf="@+id/ifReserve" android:layout_marginStart="24dp"
+                android:layout_centerVertical="true" android:src="@drawable/ic_recent_202301071417"/>
+
+            <ImageView android:id="@+id/ifReserve"
+                android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_marginStart="24sp"
+                android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:src="@drawable/ic_put_202207071206"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/clients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

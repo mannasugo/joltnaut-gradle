@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+        <TextView android:id="@+id/notate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginBottom="48dp"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#000"
+            android:textFontWeight="900" android:textSize="14sp"
+            android:letterSpacing=".15"
+            android:text="DEPOSIT USDT COLLATERAL"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1sp"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#838383"
+            android:textFontWeight="900" android:textSize="12sp"
+            android:letterSpacing=".15"
+            android:text="TO"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginVertical="12dp">
+
+            <ImageView android:id="@+id/vault"
+                android:layout_width="32dp"
+                android:layout_height="32dp" android:layout_centerVertical="true"
+                android:src="@drawable/ic_vault_202205081410"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                android:fontFamily="@font/v202307041359_consolas"
+                android:textColor="#3CFB44" android:textSize="16sp"
+                android:text="TH9BuLCBLmCTfvtgBWB14Y4TxCjPdYx4WK"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/v202201311917___litera___basic"
+            android:textColor="#838383"
+            android:textFontWeight="900" android:textSize="12sp"
+            android:letterSpacing=".15"
+            android:text="FROM"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginVertical="12dp">
+
+            <ImageView android:id="@+id/client"
+                android:layout_width="32dp"
+                android:layout_height="32dp" android:layout_centerVertical="true"
+                android:src="@drawable/ic_pay_202205081426"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                android:fontFamily="@font/v202307041359_consolas"
+                android:textColor="#000" android:textSize="16sp"
+                android:text="TH9BuLCBLmCTfvtgBWB14Y4TxCjPdYx4WK"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

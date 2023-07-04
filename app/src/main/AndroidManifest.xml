@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joltnaut">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Root"
+            android:screenOrientation="locked">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddContact" android:screenOrientation="locked" />
+        <activity android:name=".AddWalletServer" android:screenOrientation="locked" />
+        <activity android:name=".ClientWallet" android:screenOrientation="locked" />
+        <activity android:name=".Mugs" android:screenOrientation="locked" />
+        <activity android:name=".PollMug" android:screenOrientation="locked" />
+        <activity android:name=".PullMug" android:screenOrientation="locked"/>
+        <activity android:name=".VaultSwap" android:screenOrientation="locked"/>
+        <activity android:name=".Wallet2Wallet" android:screenOrientation="locked"/>
+        <activity android:name=".WalletMail" android:screenOrientation="locked"/>
+        <activity android:name=".WalletServe" android:screenOrientation="locked"/>
+        <activity android:name=".WalletServer" android:screenOrientation="locked"/>
+    </application>
+</manifest>
