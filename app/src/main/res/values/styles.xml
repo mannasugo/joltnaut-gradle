@@ -5,13 +5,18 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimaryDark">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="splash">
+        <item name="android:windowBackground">#000</item>
     </style>
 
     <style name="avatar">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
     </style>
 
     <style name="holds">

@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".Root"
+            android:name=".Splash"
             android:screenOrientation="locked">
 
             <intent-filter>
@@ -23,6 +23,7 @@
         <activity android:name=".Mugs" android:screenOrientation="locked" />
         <activity android:name=".PollMug" android:screenOrientation="locked" />
         <activity android:name=".PullMug" android:screenOrientation="locked"/>
+        <activity android:name=".Root" android:screenOrientation="locked"/>
         <activity android:name=".VaultSwap" android:screenOrientation="locked"/>
         <activity android:name=".Wallet2Wallet" android:screenOrientation="locked"/>
         <activity android:name=".WalletMail" android:screenOrientation="locked"/>
