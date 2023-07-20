@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.joltnaut">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,6 +22,7 @@
         </activity>
         <activity android:name=".AddContact" android:screenOrientation="locked" />
         <activity android:name=".AddWalletServer" android:screenOrientation="locked" />
+        <activity android:name=".BuildUp" android:screenOrientation="locked" />
         <activity android:name=".ClientWallet" android:screenOrientation="locked" />
         <activity android:name=".Mugs" android:screenOrientation="locked" />
         <activity android:name=".PollMug" android:screenOrientation="locked" />
