@@ -35,7 +35,7 @@
         android:textColor="#6C6C6C"
         android:textFontWeight="900" android:textSize="12sp"
         android:letterSpacing=".15"
-        android:text="USERNAME"/>
+        android:text="FULLNAME (SPACED)"/>
 
     <EditText android:id="@+id/alias"
         android:imeOptions="actionDone"
@@ -85,7 +85,7 @@
         android:letterSpacing=".15"
         android:text="PASSWORD"/>
 
-    <EditText android:id="@+id/pass"
+    <EditText android:id="@+id/lock"
         android:imeOptions="actionDone"
         android:layout_width="match_parent"
         android:layout_height="81px"
@@ -109,7 +109,7 @@
         android:letterSpacing=".15"
         android:text="REENTER THE PASSCODE"/>
 
-    <EditText android:id="@+id/repass"
+    <EditText android:id="@+id/relock"
         android:imeOptions="actionDone"
         android:layout_width="match_parent"
         android:layout_height="81px"
@@ -123,7 +123,7 @@
         android:textColorHint="#838383"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/polls"
+        android:id="@+id/pollMug"
         android:layout_width="match_parent"
         android:layout_height="81px" android:layout_marginTop="58sp"
         android:fontFamily="@font/v202201311917___litera___basic"
