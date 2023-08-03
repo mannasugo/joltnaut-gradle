@@ -35,7 +35,7 @@
         android:textColor="#6C6C6C"
         android:textFontWeight="900" android:textSize="12sp"
         android:letterSpacing=".15"
-        android:text="FULLNAME (SPACED)"/>
+        android:text="FULL NAME (SPACED)"/>
 
     <EditText android:id="@+id/alias"
         android:imeOptions="actionDone"

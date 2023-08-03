@@ -61,7 +61,7 @@
         android:letterSpacing=".15"
         android:text="PASSWORD"/>
 
-    <EditText android:id="@+id/pass"
+    <EditText android:id="@+id/lock"
         android:imeOptions="actionDone"
         android:layout_width="match_parent"
         android:layout_height="81px"
@@ -75,7 +75,7 @@
         android:textColorHint="#838383"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/pulls"
+        android:id="@+id/pullMug"
         android:layout_width="match_parent"
         android:layout_height="81px" android:layout_marginTop="58sp"
         android:fontFamily="@font/v202201311917___litera___basic"
