@@ -2,10 +2,14 @@ package com.joltnaut;
 
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -57,7 +61,7 @@ public class Splash extends AppCompatActivity {
 
         Call.setDoOutput(true);
 
-        String JSON = "{\"pull\": \"app\", \"APK_VER\": \"" + APK_VER + "\"}";
+        String JSON = "{\"pull\": \"splash\", \"APK_VER\": \"" + APK_VER + "\"}";
 
         OutputStream OS = Call.getOutputStream();
 
@@ -108,11 +112,28 @@ public class Splash extends AppCompatActivity {
 
       super.onPostExecute(IOContent);
 
-      if (IOContent != null) {}
+      if (IOContent != null) {
+
+        String ver;
+
+        try {
+
+          JSONObject Splash = new JSONObject(IOContent);
+
+          ver = Splash.getString("APK_VER");
+
+          if (ver.equals(APK_VER)) {
+
+            Intent intent = new Intent(Splash.this, PullMug.class);
+
+            startActivity(intent);
+          }
+        } catch (JSONException e) {e.printStackTrace();}
+      }
 
       else {
 
-        Intent intent = new Intent(Splash.this, PullMug.class);
+        Intent intent = new Intent(Splash.this, BuildUp.class);
 
         startActivity(intent);
 

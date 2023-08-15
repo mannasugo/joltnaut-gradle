@@ -26,7 +26,7 @@ public class WalletServer extends AppCompatActivity {
       @Override
       public void onClick(View v) {
 
-        Intent via = new Intent(WalletServer.this, Wallet2Wallet.class);
+        Intent via = new Intent(WalletServer.this, AddWalletServer.class);
 
         startActivity(via);
 
