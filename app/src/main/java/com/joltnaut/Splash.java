@@ -1,8 +1,8 @@
 package com.joltnaut;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +23,10 @@ import java.nio.charset.StandardCharsets;
 public class Splash extends AppCompatActivity {
 
   public static final String APK_VER = "202307201417";
+
+  public static SharedPreferences Journal;
+
+  public static SharedPreferences.Editor Journalise = Journal.edit();
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
