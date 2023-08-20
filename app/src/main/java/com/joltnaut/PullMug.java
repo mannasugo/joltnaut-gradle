@@ -11,6 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +24,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import static com.joltnaut.Splash.APK_VER;
+import static com.joltnaut.Splash.Journalise;
 
 public class PullMug extends AppCompatActivity {
 
@@ -144,7 +148,29 @@ public class PullMug extends AppCompatActivity {
 
       super.onPostExecute(IOContent);
 
-      if (IOContent != null) {}
+      if (IOContent != null) {
+
+        String ver;
+
+        try {
+
+          JSONObject PullMug = new JSONObject(IOContent);
+
+          ver = PullMug.getString("APK_VER");
+
+          if (ver.equals(APK_VER)) {
+
+            if (PullMug.has("md")) {
+
+              Journalise.putString("md", PullMug.getString("md"));
+
+              Intent intent = new Intent(PullMug.this, Root.class);
+
+              startActivity(intent);
+            }
+          }
+        } catch (JSONException e) {e.printStackTrace();}
+      }
 
       else {
 

@@ -173,7 +173,8 @@ public class PollMug extends AppCompatActivity {
               startActivity(intent);
             }
           }
-        } catch (JSONException e) {e.printStackTrace();}}
+        } catch (JSONException e) {e.printStackTrace();}
+      }
 
       else {
 
