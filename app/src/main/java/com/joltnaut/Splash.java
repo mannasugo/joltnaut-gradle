@@ -26,8 +26,6 @@ public class Splash extends AppCompatActivity {
 
   public static SharedPreferences Journal;
 
-  public static SharedPreferences.Editor Journalise = Journal.edit();
-
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -36,6 +34,8 @@ public class Splash extends AppCompatActivity {
     this.setTheme(R.style.splash);
 
     setContentView(R.layout.splash);
+
+    Journal = getSharedPreferences("journal", MODE_PRIVATE);
 
     new Call().execute();
   }

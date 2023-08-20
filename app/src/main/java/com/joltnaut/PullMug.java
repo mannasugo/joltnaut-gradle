@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +24,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
+import static com.joltnaut.Root.Journalise;
 import static com.joltnaut.Splash.APK_VER;
-import static com.joltnaut.Splash.Journalise;
+import static com.joltnaut.Splash.Journal;
 
 public class PullMug extends AppCompatActivity {
 
@@ -160,9 +162,13 @@ public class PullMug extends AppCompatActivity {
 
           if (ver.equals(APK_VER)) {
 
+            //Toast.makeText(PullMug.this, IOContent, Toast.LENGTH_SHORT).show();
+
             if (PullMug.has("md")) {
 
               Journalise.putString("md", PullMug.getString("md"));
+
+              Journalise.apply();
 
               Intent intent = new Intent(PullMug.this, Root.class);
 

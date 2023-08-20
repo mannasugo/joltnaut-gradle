@@ -1,22 +1,30 @@
 package com.joltnaut;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import static com.joltnaut.Splash.Journal;
+
 public class Root extends AppCompatActivity {
+
+  public static SharedPreferences.Editor Journalise = Journal.edit();
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     setContentView(R.layout.root);
+
+    Toast.makeText(Root.this, Journal.getString("md", null), Toast.LENGTH_SHORT).show();
 
     ImageView toClientWallet = findViewById(R.id.clientWallet);
 

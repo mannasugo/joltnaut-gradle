@@ -23,8 +23,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
+import static com.joltnaut.Root.Journalise;
 import static com.joltnaut.Splash.APK_VER;
-import static com.joltnaut.Splash.Journalise;
 
 public class PollMug extends AppCompatActivity {
 
@@ -54,7 +54,7 @@ public class PollMug extends AppCompatActivity {
       @Override
       public void onClick(View v) {
 
-        if (alias.getText().length() > 2 && mail.getText().length() > 2 && lock.getText().length() > 2 && lock.getText() == relock.getText()) {
+        if (alias.getText().length() > 2 && mail.getText().length() > 2 && lock.getText().length() > 2 /*&& lock.getText() == relock.getText()*/) {
 
           String IOString = "[\""+ alias.getText() +"\", \""+ mail.getText() +"\", \""+ lock.getText() +"\"]";
 
