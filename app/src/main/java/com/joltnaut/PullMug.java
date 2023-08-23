@@ -26,7 +26,6 @@ import java.nio.charset.StandardCharsets;
 
 import static com.joltnaut.Root.Journalise;
 import static com.joltnaut.Splash.APK_VER;
-import static com.joltnaut.Splash.Journal;
 
 public class PullMug extends AppCompatActivity {
 
@@ -165,6 +164,8 @@ public class PullMug extends AppCompatActivity {
             //Toast.makeText(PullMug.this, IOContent, Toast.LENGTH_SHORT).show();
 
             if (PullMug.has("md")) {
+
+              Journalise.putString("inlet", PullMug.getString("inlet"));
 
               Journalise.putString("md", PullMug.getString("md"));
 

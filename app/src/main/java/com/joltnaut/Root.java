@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.Objects;
+
 import static com.joltnaut.Splash.Journal;
 
 public class Root extends AppCompatActivity {
@@ -24,7 +26,7 @@ public class Root extends AppCompatActivity {
 
     setContentView(R.layout.root);
 
-    Toast.makeText(Root.this, Journal.getString("md", null), Toast.LENGTH_SHORT).show();
+    //Toast.makeText(Root.this, Journal.getString("md", null), Toast.LENGTH_SHORT).show();
 
     ImageView toClientWallet = findViewById(R.id.clientWallet);
 
@@ -56,9 +58,19 @@ public class Root extends AppCompatActivity {
       @Override
       public void onClick(View v) {
 
-        Intent to = new Intent(Root.this, WalletServer.class);
+        if (Objects.requireNonNull(Journal.getString("inlet", null)).length() > 8) {
 
-        startActivity(to);
+          Intent to = new Intent(Root.this, WalletServer.class);
+
+          startActivity(to);
+        }
+
+        else {
+
+          Intent to = new Intent(Root.this, AddWalletServer.class);
+
+          startActivity(to);
+        }
       }
     });
 
