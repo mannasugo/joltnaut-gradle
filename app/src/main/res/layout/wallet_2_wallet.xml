@@ -64,12 +64,12 @@
                 android:layout_height="32dp" android:layout_centerVertical="true"
                 android:src="@drawable/ic_pay_202205081426"/>
 
-            <TextView
+            <TextView android:id="@+id/inlet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
                 android:fontFamily="@font/v202307041359_consolas"
                 android:textColor="#000" android:textSize="16sp"
-                android:text="TH9BuLCBLmCTfvtgBWB14Y4TxCjPdYx4WK"/>
+                android:text=""/>
 
         </RelativeLayout>
 

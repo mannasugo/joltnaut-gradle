@@ -39,15 +39,15 @@
                 android:paddingVertical="14px"
                 android:paddingHorizontal="27px" android:layout_marginRight="64px"
                 android:background="@drawable/poll"
-                android:inputType="numberDecimal"
-                android:fontFamily="@font/v202201311917___litera___basic"
+                android:inputType="text"
+                android:fontFamily="@font/v202307041359_consolas"
                 android:textSize="24px"
                 android:letterSpacing=".15"
                 android:textColorHint="#838383"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            <ImageView android:id="@+id/inlet"
+                android:layout_width="32dp"
+                android:layout_height="32dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
                 android:src="@drawable/ic_max_202306301845"/>
 
         </RelativeLayout>

@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddContact" android:screenOrientation="locked" />
-        <activity android:name=".AddWalletServer" android:screenOrientation="locked" />
+        <activity android:name=".AddWalletServer" android:screenOrientation="locked" android:noHistory="true"/>
         <activity android:name=".BuildUp" android:screenOrientation="locked" />
         <activity android:name=".ClientWallet" android:screenOrientation="locked" />
         <activity android:name=".Mugs" android:screenOrientation="locked" />
