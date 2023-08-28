@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -37,6 +38,10 @@ public class WalletServer extends AppCompatActivity {
 
     setContentView(R.layout.wallet_server);
 
+    TextView vault = findViewById(R.id.vault);
+
+    vault.setText(Journal.getString("vault", null));
+
     ImageView toWalletServe = findViewById(R.id.walletServe);
 
     ImageView ifReserveVia = findViewById(R.id.ifReserve);
@@ -46,11 +51,9 @@ public class WalletServer extends AppCompatActivity {
       @Override
       public void onClick(View v) {
 
-        Toast.makeText(WalletServer.this, Journal.getString("inlet", null), Toast.LENGTH_SHORT).show();
+        Intent via = new Intent(WalletServer.this, Wallet2Wallet.class);
 
-        //Intent via = new Intent(WalletServer.this, AddWalletServer.class);
-
-        //startActivity(via);
+        startActivity(via);
 
       }
     });
@@ -154,9 +157,7 @@ public class WalletServer extends AppCompatActivity {
 
           if (ver.equals(APK_VER)) {
 
-            Toast.makeText(WalletServer.this, IOContent, Toast.LENGTH_SHORT).show();
-
-            Journalise.putString("inlet", WalletOutlet.getString("inlet"));
+            Journalise.putString("vault", WalletOutlet.getString("vault"));
 
             Journalise.apply();
 

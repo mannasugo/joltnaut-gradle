@@ -22,12 +22,13 @@
                 android:text="USD"/>
 
             <TextView
+                android:id="@+id/vault"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_toEndOf="@+id/notate" android:layout_marginStart="10dp" android:layout_centerVertical="true"
                 android:fontFamily="@font/v202201311917___litera___basic"
                 android:textColor="#3CFB44" android:textFontWeight="900" android:textSize="16sp"
                 android:letterSpacing=".15"
-                android:text="291.04"/>
+                android:text=""/>
 
             <ImageView android:id="@+id/walletServe"
                 android:layout_width="24dp"
