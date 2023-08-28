@@ -157,7 +157,7 @@ public class WalletServer extends AppCompatActivity {
 
           if (ver.equals(APK_VER)) {
 
-            Journalise.putString("vault", WalletOutlet.getString("vault"));
+            Journalise.putString("vault", String.valueOf(WalletOutlet.getLong("vault")));
 
             Journalise.apply();
 
